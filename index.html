@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>t2earn</title>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.css"
+    />
+
+    <link rel="stylesheet" href="./assets/styles/style.css" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="container-wrapper">
+      <nav class="navbar">
+        <a href="/" class="nav-img">
+          <img src="./assets/images/nav-img.png" alt="" />
+        </a>
+
+        <div class="navbar-items">
+          <div class="navbar-links">
+            <a class="black fs-16px bold" href="#">Home</a>
+            <a class="black fs-16px bold" href="#">Services</a>
+            <a class="black fs-16px bold" href="#">About</a>
+            <a class="black fs-16px bold" href="#">Login</a>
+            <a class="white fs-16px rounded-btn bg-purple" href="#">Sign Up</a>
+          </div>
+
+          <div class="navbar-dropdowns">
+            <div class="navbar-dropdown">
+              <p class="black fs-16px bold">Playstore (Bulk Review)</p>
+              <img src="./assets/images/down-arrow-icon.png" alt="" />
+            </div>
+            <div class="navbar-dropdown">
+              <p class="black fs-16px bold">Facebook (Bulk Comment)</p>
+              <img src="./assets/images/down-arrow-icon.png" alt="" />
+            </div>
+            <div class="navbar-dropdown">
+              <p class="black fs-16px bold">IMDB (Bulk Review)</p>
+              <img src="./assets/images/down-arrow-icon.png" alt="" />
+            </div>
+            <div class="navbar-dropdown">
+              <p class="black fs-16px bold">See All</p>
+              <img src="./assets/images/down-arrow-icon.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- hero -->
+    <section class="hero">
+      <div class="hero-center-content">
+        <div class="hero-center-content-wrapper">
+          <div class="hero-form">
+            <div class="hero-form-first-inputs">
+              <input
+                type="text"
+                class="hero-forms-input fs-16px weight-5 dark-blue"
+                placeholder="Plateform"
+              />
+              <input
+                type="text"
+                class="hero-forms-input fs-16px weight-5 dark-blue"
+                placeholder="Ammount"
+              />
+            </div>
+            <input
+              type="text"
+              class="hero-forms-input fs-16px weight-5 dark-blue"
+              placeholder="Describe in Depth"
+            />
+
+            <div class="hero-form-task">
+              <p class="fs-16px dark-blue weight-5">Task to be done within</p>
+              <div class="task-hours">
+                <p class="task-hour fs-17px white bold">12 Hours</p>
+                <p class="task-hour active fs-17px white bold">1 Day</p>
+                <p class="task-hour fs-17px white bold">1 Week</p>
+                <p class="task-hour fs-17px white bold">1 Month</p>
+              </div>
+              <div class="hero-form-task-textarea-container">
+                <p class="fs-16px dark-blue weight-5">Specified Rules</p>
+                <textarea
+                  name=""
+                  id=""
+                  placeholder="Start typing Here..."
+                ></textarea>
+              </div>
+            </div>
+            <button class="hero-form-btn fs-25px weight-6 white">
+              Post Your Task
+            </button>
+          </div>
+
+          <div class="hero-text-content">
+            <p class="white fs-40px bold">Earn whenever you want</p>
+            <p class="fs-24px white weight-6">
+              The more you complete tasks,<br />
+              the more you will earn
+            </p>
+
+            <button class="hero-text-btn fs-25px weight-7">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- live-task -->
+    <div class="live-task">
+      <div class="container-wrapper">
+        <p class="live-task-title fs-60px dark-blue bold">Live Tasks</p>
+
+        <div class="live-task-cards">
+          <!-- card -->
+          <div class="live-task-card">
+            <div class="live-task-card-header">
+              <img src="./assets/images/img.png" alt="" />
+              <div class="live-task-card-header-right">
+                <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
+                <div class="live-task-card-header-right-side">
+                  <p class="fs-14px light-white">25/10//2021</p>
+                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="live-task-card-body">
+              <div class="live-task-card-body-statuses">
+                <div class="card-dates">
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">Start Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">End Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <div>
+                      <p class="black fs-17px weight-6">Status</p>
+                      <p class="text-active">Active</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="live-status-cards">
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      150 <br />
+                      Task Required
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Done
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Left
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="live-task-card-pricing">
+                <p class="fs-11px black">₹ Per Task : 50/-</p>
+                <a href="#" class="fs-11px">View More >></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="live-task-card">
+            <div class="live-task-card-header">
+              <img src="./assets/images/img.png" alt="" />
+              <div class="live-task-card-header-right">
+                <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
+                <div class="live-task-card-header-right-side">
+                  <p class="fs-14px light-white">25/10//2021</p>
+                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="live-task-card-body">
+              <div class="live-task-card-body-statuses">
+                <div class="card-dates">
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">Start Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">End Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <div>
+                      <p class="black fs-17px weight-6">Status</p>
+                      <p class="text-active">Active</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="live-status-cards">
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      150 <br />
+                      Task Required
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Done
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Left
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="live-task-card-pricing">
+                <p class="fs-11px black">₹ Per Task : 50/-</p>
+                <a href="#" class="fs-11px">View More >></a>
+              </div>
+            </div>
+          </div>
+          <!-- card -->
+          <div class="live-task-card">
+            <div class="live-task-card-header">
+              <img src="./assets/images/img.png" alt="" />
+              <div class="live-task-card-header-right">
+                <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
+                <div class="live-task-card-header-right-side">
+                  <p class="fs-14px light-white">25/10//2021</p>
+                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="live-task-card-body">
+              <div class="live-task-card-body-statuses">
+                <div class="card-dates">
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">Start Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">End Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <div>
+                      <p class="black fs-17px weight-6">Status</p>
+                      <p class="text-active">Active</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="live-status-cards">
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      150 <br />
+                      Task Required
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Done
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Left
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="live-task-card-pricing">
+                <p class="fs-11px black">₹ Per Task : 50/-</p>
+                <a href="#" class="fs-11px">View More >></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- card -->
+          <div class="live-task-card">
+            <div class="live-task-card-header">
+              <img src="./assets/images/img.png" alt="" />
+              <div class="live-task-card-header-right">
+                <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
+                <div class="live-task-card-header-right-side">
+                  <p class="fs-14px light-white">25/10//2021</p>
+                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="live-task-card-body">
+              <div class="live-task-card-body-statuses">
+                <div class="card-dates">
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">Start Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <p class="gray bold fs-16px text-center">
+                      <span class="black">End Date</span> <br />
+                      26/02/2021
+                    </p>
+                  </div>
+                  <div class="card-date">
+                    <div>
+                      <p class="black fs-17px weight-6">Status</p>
+                      <p class="text-active">Active</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="live-status-cards">
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      150 <br />
+                      Task Required
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Done
+                    </p>
+                  </div>
+                  <div class="live-status-card">
+                    <p class="fs-14px white">
+                      50 <br />
+                      Task Left
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="live-task-card-pricing">
+                <p class="fs-11px black">₹ Per Task : 50/-</p>
+                <a href="#" class="fs-11px">View More >></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="live-task-button family-muli">View All</div>
+      </div>
+    </div>
+
+    <!-- our-services -->
+    <div class="our-services">
+      <p class="fs-60px bold our-services-title">Our Services</p>
+
+      <div class="our-services-cards-wrapper">
+        <div class="container-wrapper">
+          <div class="our-services-cards">
+            <div class="our-services-card">
+              <div class="our-services-card-img">
+                <img src="./assets/images/down-arrow-circle.png" alt="" />
+              </div>
+              <p class="fs-28px black weight-6">Apps Downloads</p>
+              <p class="fs-14px gray weight-6">
+                Download the app from the given link and earn.
+              </p>
+            </div>
+            <div class="our-services-card">
+              <div class="our-services-card-img">
+                <img src="./assets/images/circle-star.png" alt="" />
+              </div>
+              <p class="fs-28px black weight-6">Ratings</p>
+              <p class="fs-14px gray weight-6">
+                Download the app from the given link and earn.
+              </p>
+            </div>
+            <div class="our-services-card">
+              <div class="our-services-card-img">
+                <img src="./assets/images/bell.png" alt="" />
+              </div>
+              <p class="fs-28px black weight-6">Subscribe</p>
+              <p class="fs-14px gray weight-6">
+                Download the app from the given link and earn.
+              </p>
+            </div>
+            <div class="our-services-card">
+              <div class="our-services-card-img">
+                <img src="./assets/images/comments.png" alt="" />
+              </div>
+              <p class="fs-28px black weight-6">Comment</p>
+              <p class="fs-14px gray weight-6">
+                Download the app from the given link and earn.
+              </p>
+            </div>
+            <div class="our-services-card">
+              <div class="our-services-card-img">
+                <img src="./assets/images/person-check-fill.png" alt="" />
+              </div>
+              <p class="fs-28px black weight-6">Signup</p>
+              <p class="fs-14px gray weight-6">
+                Download the app from the given link and earn.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- more-details -->
+    <div class="more-details-wrapper">
+      <img class="circle" src="./assets/images/details-circle.png" alt="" />
+      <img class="circles" src="./assets/images/details-circles.png" alt="" />
+      <img
+        class="details-grid-img"
+        src="./assets/images/details-grid.png"
+        alt=""
+      />
+      <img
+        class="details-circle-fill-img"
+        src="./assets/images/details-circle-fill.png"
+        alt=""
+      />
+      <div class="container-wrapper">
+        <div class="more-details">
+          <div class="more-details-left">
+            <p class="white fs-60px bold">
+              Earn as much as you can <br />
+              From any Place, Anytime
+            </p>
+
+            <p class="bold white fs-31px">
+              Save 61% on average when you Post your first task.
+            </p>
+
+            <div class="more-details-btn fs-31px bold">Get More Details</div>
+          </div>
+          <div class="more-details-img">
+            <img src="./assets/images/more-details-girl-img.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- to-help -->
+    <div class="container-wrapper">
+      <div class="to-help">
+        <div class="to-help-left">
+          <div>
+            <p class="fs-60px black weight-6">We're here to help</p>
+            <p class="fs-24px gray weight-6">
+              Find clear
+              <a href="/" class="faq-highlight weight-6">FAQs</a> online and
+              customer service available at the end of the phone seven days a
+              week
+            </p>
+          </div>
+
+          <img
+            class="to-help-laptop-img"
+            src="./assets/images/to-help-laptop-img.png"
+            alt=""
+          />
+
+          <button class="to-help-btn fs-31px white bold">Get a Quote</button>
+        </div>
+        <div class="to-help-right">
+          <div class="to-help-accordion">
+            <div class="to-help-accordion-btn">
+              <p class="fs-20px weight-6 black">
+                How can I earn from task2Earn ?
+              </p>
+              <img
+                class="to-help-accordion-icon"
+                src="./assets/images/plus-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="to-help-accordion-body">
+              <div class="to-help-accordion-body-content">
+                <p class="fs-16px gray">
+                  You can earn easily just by completing tasks. which are simple
+                  and easy to do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="to-help-accordion">
+            <div class="to-help-accordion-btn">
+              <p class="fs-20px weight-6 black">
+                How can I earn from task2Earn ?
+              </p>
+              <img
+                class="to-help-accordion-icon"
+                src="./assets/images/plus-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="to-help-accordion-body">
+              <div class="to-help-accordion-body-content">
+                <p class="fs-16px gray">
+                  You can earn easily just by completing tasks. which are simple
+                  and easy to do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="to-help-accordion">
+            <div class="to-help-accordion-btn">
+              <p class="fs-20px weight-6 black">
+                How can I earn from task2Earn ?
+              </p>
+              <img
+                class="to-help-accordion-icon"
+                src="./assets/images/plus-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="to-help-accordion-body">
+              <div class="to-help-accordion-body-content">
+                <p class="fs-16px gray">
+                  You can earn easily just by completing tasks. which are simple
+                  and easy to do.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="to-help-accordion">
+            <div class="to-help-accordion-btn">
+              <p class="fs-20px weight-6 black">
+                How can I earn from task2Earn ?
+              </p>
+              <img
+                class="to-help-accordion-icon"
+                src="./assets/images/plus-icon.png"
+                alt=""
+              />
+            </div>
+            <div class="to-help-accordion-body">
+              <div class="to-help-accordion-body-content">
+                <p class="fs-16px gray">
+                  You can earn easily just by completing tasks. which are simple
+                  and easy to do.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- mobile-app -->
+    <div class="container-wrapper">
+      <div class="mobile-app">
+        <div class="mobile-app-left">
+          <p class="fs-60px weight-6 black">
+            Now Available on Playstore Download it now.
+          </p>
+          <p class="fs-24px gray weight-4">
+            Task2Earn is a good platform for freelancers and buyers, to make
+            money easily by doing or posting simple tasks.
+          </p>
+
+          <a href="/" class="mobile-app-btn">
+            <img src="./assets/images/mobile-app-btn.png" alt="" />
+          </a>
+        </div>
+        <div class="mobile-app-right">
+          <img src="./assets/images/mobile-app-image.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- why-join -->
+    <div class="container-wrapper">
+      <div class="why-join">
+        <div class="why-join-left">
+          <img
+            src="./assets/images/joinus-image.png"
+            class="why-join-image"
+            alt=""
+          />
+        </div>
+        <div class="why-join-right">
+          <p class="fs-60px black weight-6 text-center">Why Join Us ?</p>
+          <p class="text-center fs-40px black weight-4">
+            we are India's first leading
+          </p>
+
+          <div class="why-join-cards">
+            <div class="why-join-card">
+              <p class="fs-60px bold dark-purple">24x7</p>
+              <p class="fs-20px bold dark-purple">Support & Service</p>
+            </div>
+            <div class="why-join-card">
+              <p class="fs-60px bold dark-purple">100%</p>
+              <p class="fs-20px bold dark-purple">Secure Payment</p>
+            </div>
+            <div class="why-join-card">
+              <p class="fs-60px bold dark-purple">2M+</p>
+              <p class="fs-20px bold dark-purple">Active Users</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- javascript -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/jquery.slick/1.3.11/slick.min.js"
+    ></script>
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
