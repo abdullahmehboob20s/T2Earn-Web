@@ -57,20 +57,20 @@ $(".our-services-cards").slick({
   ],
 });
 
-$(".customers-right-wrapper").slick({
-  dots: false,
-  infinite: false,
-  speed: 700,
-  arrows: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  nextArrow: ` <button class="customers-card-btn">
-  <img  src="./assets/images/chevron-right.png" alt="" />
-</button>`,
-  prevArrow: ` <button class="customers-card-btn">
-  <img  src="./assets/images/chevron-left.png" alt="" />
-</button>`,
-});
+// $(".customers-right").slick({
+//   dots: false,
+//   infinite: false,
+//   speed: 700,
+//   arrows: true,
+//   slidesToShow: 2,
+//   slidesToScroll: 1,
+//   nextArrow: ` <button class="customers-card-btn">
+//   <img  src="./assets/images/chevron-right.png" alt="" />
+// </button>`,
+//   prevArrow: ` <button class="customers-card-btn">
+//   <img  src="./assets/images/chevron-left.png" alt="" />
+// </button>`,
+// });
 
 // for accordions ===================================
 
@@ -114,4 +114,22 @@ navbarCrossIcon.addEventListener("click", () => {
 blackScreen.addEventListener("click", () => {
   navbarItems.classList.remove("show");
   blackScreen.classList.remove("show");
+});
+
+// swiper
+var swiper = new Swiper(".customers-right", {
+  slidesPerView: 1,
+  spaceBetween: 0,
+
+  navigation: {
+    nextEl: ".swiper-prev",
+    prevEl: ".swiper-next",
+  },
+
+  breakpoints: {
+    780: {
+      slidesPerView: 2,
+      spaceBetween: 0,
+    },
+  },
 });
