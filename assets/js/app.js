@@ -1,6 +1,5 @@
 $(".live-task-cards").slick({
   dots: true,
-  infinite: true,
   speed: 700,
   arrows: false,
   slidesToShow: 3,
@@ -8,6 +7,35 @@ $(".live-task-cards").slick({
   customPaging: function (slider, i) {
     return '<a href="#" class="slick-slider-dots"></a>';
   },
+
+  responsive: [
+    {
+      breakpoint: 1150,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 1.5,
+      },
+    },
+    {
+      breakpoint: 540,
+      settings: {
+        slidesToShow: 1.2,
+        slidesToScroll: 1,
+      },
+    },
+    {
+      breakpoint: 420,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
 
 $(".our-services-cards").slick({
@@ -18,6 +46,15 @@ $(".our-services-cards").slick({
   slidesToShow: 3.5,
   slidesToScroll: 1,
   nextArrow: `<button class="slide-arrow next-arrow"></button>`,
+
+  responsive: [
+    {
+      breakpoint: 1400,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 });
 
 const toHelpAccordion = document.querySelectorAll(".to-help-accordion");
@@ -41,3 +78,22 @@ for (let i = 0; i < toHelpAccordionBtn.length; i++) {
     }
   });
 }
+
+// for sidebar in responsive
+const navbarItems = document.querySelector(".navbar-items");
+const hamburger = document.querySelector(".hamburger");
+const navbarCrossIcon = document.querySelector(".navbar-cross-icon");
+const blackScreen = document.querySelector(".black-screen");
+
+hamburger.addEventListener("click", () => {
+  navbarItems.classList.toggle("show");
+  blackScreen.classList.toggle("show");
+});
+navbarCrossIcon.addEventListener("click", () => {
+  navbarItems.classList.remove("show");
+  blackScreen.classList.remove("show");
+});
+blackScreen.addEventListener("click", () => {
+  navbarItems.classList.remove("show");
+  blackScreen.classList.remove("show");
+});

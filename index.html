@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="./assets/styles/style.css" />
   </head>
   <body>
+    <div class="black-screen"></div>
     <!-- navbar -->
     <div class="container-wrapper">
       <nav class="navbar">
@@ -22,7 +23,14 @@
           <img src="./assets/images/nav-img.png" alt="" />
         </a>
 
+        <img src="./assets/images/hamburger.png" class="hamburger" alt="" />
+
         <div class="navbar-items">
+          <img
+            src="./assets/images/cross.png"
+            class="navbar-cross-icon"
+            alt=""
+          />
           <div class="navbar-links">
             <a class="black fs-16px bold" href="#">Home</a>
             <a class="black fs-16px bold" href="#">Services</a>
@@ -33,19 +41,25 @@
 
           <div class="navbar-dropdowns">
             <div class="navbar-dropdown">
-              <p class="black fs-16px bold">Playstore (Bulk Review)</p>
+              <p class="black fs-16px family-muli-semibold">
+                Playstore (Bulk Review)
+              </p>
               <img src="./assets/images/down-arrow-icon.png" alt="" />
             </div>
             <div class="navbar-dropdown">
-              <p class="black fs-16px bold">Facebook (Bulk Comment)</p>
+              <p class="black fs-16px family-muli-semibold">
+                Facebook (Bulk Comment)
+              </p>
               <img src="./assets/images/down-arrow-icon.png" alt="" />
             </div>
             <div class="navbar-dropdown">
-              <p class="black fs-16px bold">IMDB (Bulk Review)</p>
+              <p class="black fs-16px family-muli-semibold">
+                IMDB (Bulk Review)
+              </p>
               <img src="./assets/images/down-arrow-icon.png" alt="" />
             </div>
             <div class="navbar-dropdown">
-              <p class="black fs-16px bold">See All</p>
+              <p class="black fs-16px family-muli-semibold">See All</p>
               <img src="./assets/images/down-arrow-icon.png" alt="" />
             </div>
           </div>
@@ -59,25 +73,52 @@
         <div class="hero-center-content-wrapper">
           <div class="hero-form">
             <div class="hero-form-first-inputs">
+              <div class="hero-forms-input">
+                <label
+                  class="fs-16px black family-muli-light weight-5"
+                  for="Plateform"
+                  >Plateform</label
+                >
+                <input
+                  type="text"
+                  id="Plateform"
+                  class="fs-16px family-muli-light weight-5 dark-blue"
+                  placeholder="Enter your Platform Name"
+                />
+              </div>
+              <div class="hero-forms-input">
+                <label
+                  for="Ammount"
+                  class="fs-16px black family-muli-light weight-5"
+                  >Ammount</label
+                >
+                <input
+                  type="text"
+                  id="Ammount"
+                  class="fs-16px family-muli-light weight-5 dark-blue"
+                  placeholder="Enter the Amount you offer"
+                />
+              </div>
+            </div>
+
+            <div class="hero-forms-input">
+              <label
+                for="Describe in Depth"
+                class="fs-16px black family-muli-light weight-5"
+                >Describe in Depth</label
+              >
               <input
                 type="text"
-                class="hero-forms-input fs-16px weight-5 dark-blue"
-                placeholder="Plateform"
-              />
-              <input
-                type="text"
-                class="hero-forms-input fs-16px weight-5 dark-blue"
-                placeholder="Ammount"
+                id="Describe in Depth"
+                class="fs-16px family-muli-light weight-5 dark-blue"
+                placeholder="Tell us more about your task..."
               />
             </div>
-            <input
-              type="text"
-              class="hero-forms-input fs-16px weight-5 dark-blue"
-              placeholder="Describe in Depth"
-            />
 
             <div class="hero-form-task">
-              <p class="fs-16px dark-blue weight-5">Task to be done within</p>
+              <p class="fs-16px dark-blue family-muli-light weight-5">
+                Task to be done within
+              </p>
               <div class="task-hours">
                 <p class="task-hour fs-17px white bold">12 Hours</p>
                 <p class="task-hour active fs-17px white bold">1 Day</p>
@@ -85,27 +126,30 @@
                 <p class="task-hour fs-17px white bold">1 Month</p>
               </div>
               <div class="hero-form-task-textarea-container">
-                <p class="fs-16px dark-blue weight-5">Specified Rules</p>
+                <p class="fs-16px dark-blue family-muli-light weight-5">
+                  Specified Rules
+                </p>
                 <textarea
                   name=""
                   id=""
                   placeholder="Start typing Here..."
+                  class="family-muli-light"
                 ></textarea>
               </div>
             </div>
-            <button class="hero-form-btn fs-25px weight-6 white">
+            <button class="hero-form-btn fs-24px white family-muli-light">
               Post Your Task
             </button>
           </div>
 
           <div class="hero-text-content">
-            <p class="white fs-40px bold">Earn whenever you want</p>
-            <p class="fs-24px white weight-6">
+            <p class="white fs-40px family-muli-bold">Earn whenever you want</p>
+            <p class="fs-24px white family-muli-bold">
               The more you complete tasks,<br />
               the more you will earn
             </p>
 
-            <button class="hero-text-btn fs-25px weight-7">Learn More</button>
+            <button class="hero-text-btn fs-24px weight-5">Learn More</button>
           </div>
         </div>
       </div>
@@ -114,18 +158,25 @@
     <!-- live-task -->
     <div class="live-task">
       <div class="container-wrapper">
-        <p class="live-task-title fs-60px dark-blue bold">Live Tasks</p>
+        <p class="live-task-title fs-60px dark-blue family-gilroy-extrabold">
+          Live Tasks
+        </p>
 
         <div class="live-task-cards">
-          <!-- card -->
           <div class="live-task-card">
             <div class="live-task-card-header">
               <img src="./assets/images/img.png" alt="" />
               <div class="live-task-card-header-right">
-                <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
+                <p class="fs-20px weight-7 white family-open-sans uppercase">
+                  SIGNUP offer
+                </p>
                 <div class="live-task-card-header-right-side">
-                  <p class="fs-14px light-white">25/10//2021</p>
-                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                  <p class="fs-14px light-white family-open-sans">
+                    25/10//2021
+                  </p>
+                  <p class="fs-14px white weight-5 family-open-sans">
+                    Earned : 1299/-
+                  </p>
                 </div>
               </div>
             </div>
@@ -134,40 +185,49 @@
               <div class="live-task-card-body-statuses">
                 <div class="card-dates">
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">Start Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span class="black family-open-sans fs-16px"
+                        >Start Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">End Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span
+                        class="black family-open-sans bold fs-16px text-center"
+                        >End Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
                     <div>
-                      <p class="black fs-17px weight-6">Status</p>
-                      <p class="text-active">Active</p>
+                      <p class="black fs-17px weight-6 family-open-sans">
+                        Status
+                      </p>
+                      <p class="text-active family-open-sans">Active</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="live-status-cards">
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       150 <br />
                       Task Required
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Done
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Left
                     </p>
@@ -182,15 +242,20 @@
             </div>
           </div>
 
-          <!-- card -->
           <div class="live-task-card">
             <div class="live-task-card-header">
               <img src="./assets/images/img.png" alt="" />
               <div class="live-task-card-header-right">
-                <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
+                <p class="fs-20px weight-7 white family-open-sans uppercase">
+                  SIGNUP offer
+                </p>
                 <div class="live-task-card-header-right-side">
-                  <p class="fs-14px light-white">25/10//2021</p>
-                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                  <p class="fs-14px light-white family-open-sans">
+                    25/10//2021
+                  </p>
+                  <p class="fs-14px white weight-5 family-open-sans">
+                    Earned : 1299/-
+                  </p>
                 </div>
               </div>
             </div>
@@ -199,40 +264,49 @@
               <div class="live-task-card-body-statuses">
                 <div class="card-dates">
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">Start Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span class="black family-open-sans fs-16px"
+                        >Start Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">End Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span
+                        class="black family-open-sans bold fs-16px text-center"
+                        >End Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
                     <div>
-                      <p class="black fs-17px weight-6">Status</p>
-                      <p class="text-active">Active</p>
+                      <p class="black fs-17px weight-6 family-open-sans">
+                        Status
+                      </p>
+                      <p class="text-active family-open-sans">Active</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="live-status-cards">
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       150 <br />
                       Task Required
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Done
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Left
                     </p>
@@ -246,15 +320,20 @@
               </div>
             </div>
           </div>
-          <!-- card -->
           <div class="live-task-card">
             <div class="live-task-card-header">
               <img src="./assets/images/img.png" alt="" />
               <div class="live-task-card-header-right">
-                <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
+                <p class="fs-20px weight-7 white family-open-sans uppercase">
+                  SIGNUP offer
+                </p>
                 <div class="live-task-card-header-right-side">
-                  <p class="fs-14px light-white">25/10//2021</p>
-                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                  <p class="fs-14px light-white family-open-sans">
+                    25/10//2021
+                  </p>
+                  <p class="fs-14px white weight-5 family-open-sans">
+                    Earned : 1299/-
+                  </p>
                 </div>
               </div>
             </div>
@@ -263,40 +342,49 @@
               <div class="live-task-card-body-statuses">
                 <div class="card-dates">
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">Start Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span class="black family-open-sans fs-16px"
+                        >Start Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">End Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span
+                        class="black family-open-sans bold fs-16px text-center"
+                        >End Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
                     <div>
-                      <p class="black fs-17px weight-6">Status</p>
-                      <p class="text-active">Active</p>
+                      <p class="black fs-17px weight-6 family-open-sans">
+                        Status
+                      </p>
+                      <p class="text-active family-open-sans">Active</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="live-status-cards">
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       150 <br />
                       Task Required
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Done
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Left
                     </p>
@@ -311,15 +399,18 @@
             </div>
           </div>
 
-          <!-- card -->
           <div class="live-task-card">
             <div class="live-task-card-header">
               <img src="./assets/images/img.png" alt="" />
               <div class="live-task-card-header-right">
                 <p class="fs-20px weight-7 white uppercase">SIGNUP offer</p>
                 <div class="live-task-card-header-right-side">
-                  <p class="fs-14px light-white">25/10//2021</p>
-                  <p class="fs-14px white weight-6">Earned : 1299/-</p>
+                  <p class="fs-14px light-white family-open-sans">
+                    25/10//2021
+                  </p>
+                  <p class="fs-14px white weight-5 family-open-sans">
+                    Earned : 1299/-
+                  </p>
                 </div>
               </div>
             </div>
@@ -328,40 +419,49 @@
               <div class="live-task-card-body-statuses">
                 <div class="card-dates">
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">Start Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span class="black family-open-sans fs-16px"
+                        >Start Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
-                    <p class="gray bold fs-16px text-center">
-                      <span class="black">End Date</span> <br />
+                    <p class="family-open-sans gray bold fs-16px text-center">
+                      <span
+                        class="black family-open-sans bold fs-16px text-center"
+                        >End Date</span
+                      >
+                      <br />
                       26/02/2021
                     </p>
                   </div>
                   <div class="card-date">
                     <div>
-                      <p class="black fs-17px weight-6">Status</p>
-                      <p class="text-active">Active</p>
+                      <p class="black fs-17px weight-6 family-open-sans">
+                        Status
+                      </p>
+                      <p class="text-active family-open-sans">Active</p>
                     </div>
                   </div>
                 </div>
 
                 <div class="live-status-cards">
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       150 <br />
                       Task Required
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Done
                     </p>
                   </div>
                   <div class="live-status-card">
-                    <p class="fs-14px white">
+                    <p class="fs-14px white family-open-sans">
                       50 <br />
                       Task Left
                     </p>
@@ -376,13 +476,17 @@
             </div>
           </div>
         </div>
-        <div class="live-task-button family-muli">View All</div>
+        <div class="live-task-button fs-31px family-muli-bold">View All</div>
       </div>
     </div>
 
     <!-- our-services -->
-    <div class="our-services">
-      <p class="fs-60px bold our-services-title">Our Services</p>
+    <div class="our-services" style="overflow: hidden">
+      <div class="container-wrapper">
+        <p class="fs-60px our-services-title family-gilroy-extrabold">
+          Our Services
+        </p>
+      </div>
 
       <div class="our-services-cards-wrapper">
         <div class="container-wrapper">
@@ -391,8 +495,10 @@
               <div class="our-services-card-img">
                 <img src="./assets/images/down-arrow-circle.png" alt="" />
               </div>
-              <p class="fs-28px black weight-6">Apps Downloads</p>
-              <p class="fs-14px gray weight-6">
+              <p class="fs-28px black weight-6 family-muli-light">
+                Apps Downloads
+              </p>
+              <p class="fs-14px gray family-opensans">
                 Download the app from the given link and earn.
               </p>
             </div>
@@ -400,8 +506,8 @@
               <div class="our-services-card-img">
                 <img src="./assets/images/circle-star.png" alt="" />
               </div>
-              <p class="fs-28px black weight-6">Ratings</p>
-              <p class="fs-14px gray weight-6">
+              <p class="fs-28px black weight-6 family-muli-light">Ratings</p>
+              <p class="fs-14px gray family-opensans">
                 Download the app from the given link and earn.
               </p>
             </div>
@@ -409,8 +515,8 @@
               <div class="our-services-card-img">
                 <img src="./assets/images/bell.png" alt="" />
               </div>
-              <p class="fs-28px black weight-6">Subscribe</p>
-              <p class="fs-14px gray weight-6">
+              <p class="fs-28px black weight-6 family-muli-light">Subscribe</p>
+              <p class="fs-14px gray family-opensans">
                 Download the app from the given link and earn.
               </p>
             </div>
@@ -418,8 +524,8 @@
               <div class="our-services-card-img">
                 <img src="./assets/images/comments.png" alt="" />
               </div>
-              <p class="fs-28px black weight-6">Comment</p>
-              <p class="fs-14px gray weight-6">
+              <p class="fs-28px black weight-6 family-muli-light">Comment</p>
+              <p class="fs-14px gray family-opensans">
                 Download the app from the given link and earn.
               </p>
             </div>
@@ -427,8 +533,8 @@
               <div class="our-services-card-img">
                 <img src="./assets/images/person-check-fill.png" alt="" />
               </div>
-              <p class="fs-28px black weight-6">Signup</p>
-              <p class="fs-14px gray weight-6">
+              <p class="fs-28px black weight-6 family-muli-light">Signup</p>
+              <p class="fs-14px gray family-opensans">
                 Download the app from the given link and earn.
               </p>
             </div>
@@ -454,16 +560,18 @@
       <div class="container-wrapper">
         <div class="more-details">
           <div class="more-details-left">
-            <p class="white fs-60px bold">
+            <p class="white fs-60px weight-8 family-muli-bold">
               Earn as much as you can <br />
               From any Place, Anytime
             </p>
 
-            <p class="bold white fs-31px">
+            <p class="white fs-31px weight-8 family-muli-bold">
               Save 61% on average when you Post your first task.
             </p>
 
-            <div class="more-details-btn fs-31px bold">Get More Details</div>
+            <div class="more-details-btn fs-31px bold family-muli-bold">
+              Get More Details
+            </div>
           </div>
           <div class="more-details-img">
             <img src="./assets/images/more-details-girl-img.png" alt="" />
@@ -477,8 +585,10 @@
       <div class="to-help">
         <div class="to-help-left">
           <div>
-            <p class="fs-60px black weight-6">We're here to help</p>
-            <p class="fs-24px gray weight-6">
+            <p class="fs-60px black weight-5 family-poppins">
+              We're here to help
+            </p>
+            <p class="fs-24px gray family-muli-bold">
               Find clear
               <a href="/" class="faq-highlight weight-6">FAQs</a> online and
               customer service available at the end of the phone seven days a
@@ -497,7 +607,7 @@
         <div class="to-help-right">
           <div class="to-help-accordion">
             <div class="to-help-accordion-btn">
-              <p class="fs-20px weight-6 black">
+              <p class="fs-20px weight-4 black family-muli">
                 How can I earn from task2Earn ?
               </p>
               <img
@@ -517,7 +627,7 @@
           </div>
           <div class="to-help-accordion">
             <div class="to-help-accordion-btn">
-              <p class="fs-20px weight-6 black">
+              <p class="fs-20px weight-4 black family-muli">
                 How can I earn from task2Earn ?
               </p>
               <img
@@ -537,7 +647,7 @@
           </div>
           <div class="to-help-accordion">
             <div class="to-help-accordion-btn">
-              <p class="fs-20px weight-6 black">
+              <p class="fs-20px weight-4 black family-muli">
                 How can I earn from task2Earn ?
               </p>
               <img
@@ -557,7 +667,7 @@
           </div>
           <div class="to-help-accordion">
             <div class="to-help-accordion-btn">
-              <p class="fs-20px weight-6 black">
+              <p class="fs-20px weight-4 black family-muli">
                 How can I earn from task2Earn ?
               </p>
               <img
@@ -583,10 +693,10 @@
     <div class="container-wrapper">
       <div class="mobile-app">
         <div class="mobile-app-left">
-          <p class="fs-60px weight-6 black">
+          <p class="fs-60px weight-5 black family-poppins">
             Now Available on Playstore Download it now.
           </p>
-          <p class="fs-24px gray weight-4">
+          <p class="fs-24px gray weight-4 family-poppins">
             Task2Earn is a good platform for freelancers and buyers, to make
             money easily by doing or posting simple tasks.
           </p>
@@ -597,6 +707,92 @@
         </div>
         <div class="mobile-app-right">
           <img src="./assets/images/mobile-app-image.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- customers -->
+    <div class="customers-wrapper">
+      <div class="container-wrapper">
+        <div class="customers">
+          <div class="customers-left">
+            <p class="fs-28px weight-4 white uppercase family-muli-light">
+              CUSTOMER TESTIMONIAL
+            </p>
+            <p class="fs-60px white weight-8">
+              What They <br />
+              think of Us
+            </p>
+            <p class="fs-24px white weight-6">
+              We are happy when our customers are too
+            </p>
+          </div>
+
+          <div class="customers-right">
+            <div class="customer-card">
+              <div>
+                <img
+                  class="customer-img"
+                  src="./assets/images/customer-img.png"
+                  alt=""
+                />
+                <p
+                  class="
+                    gray
+                    fs-24px
+                    customer-card-title
+                    family-muli-bold
+                    weight-9
+                  "
+                >
+                  Task2Earn is the best source of earning during the lockdown. I
+                  made around 8600 Rs. last month from this plateform. Thanks to
+                  Task2Earn.
+                </p>
+              </div>
+
+              <div class="customer-name">
+                <p class="fs-31px light-blue bold text-center">Jaxon Clarke</p>
+                <p class="fs-28px gray weight-4 text-center">Abhay</p>
+              </div>
+            </div>
+            <div class="customer-card">
+              <div>
+                <img
+                  class="customer-img"
+                  src="./assets/images/customer-img-2.png"
+                  alt=""
+                />
+                <p
+                  class="
+                    gray
+                    fs-24px
+                    customer-card-title
+                    family-muli-bold
+                    weight-9
+                  "
+                >
+                  One of the most trusted and genuine Platform for beginners,
+                  freelancers, students, even for those who are finding jobs,
+                  tasks are literally too simple to complete.
+                </p>
+              </div>
+
+              <div class="customer-name">
+                <p class="fs-31px light-blue bold text-center">Harold Adams</p>
+                <p class="fs-28px gray weight-4 text-center">Amit</p>
+              </div>
+            </div>
+
+            <div class="customers-card-btns">
+              <button>
+                <img src="./assets/images/chevron-left.png" alt="" />
+              </button>
+              <button>
+                <img src="./assets/images/chevron-right.png" alt="" />
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -612,25 +808,127 @@
           />
         </div>
         <div class="why-join-right">
-          <p class="fs-60px black weight-6 text-center">Why Join Us ?</p>
+          <p class="fs-60px black weight-6 text-center family-poppins">
+            Why Join Us ?
+          </p>
           <p class="text-center fs-40px black weight-4">
             we are India's first leading
           </p>
 
           <div class="why-join-cards">
-            <div class="why-join-card">
-              <p class="fs-60px bold dark-purple">24x7</p>
+            <div class="why-join-card family-open-sans">
+              <p class="fs-60px bold dark-purple family-open-sans">24x7</p>
               <p class="fs-20px bold dark-purple">Support & Service</p>
             </div>
             <div class="why-join-card">
-              <p class="fs-60px bold dark-purple">100%</p>
+              <p class="fs-60px bold dark-purple family-open-sans">100%</p>
               <p class="fs-20px bold dark-purple">Secure Payment</p>
             </div>
             <div class="why-join-card">
-              <p class="fs-60px bold dark-purple">2M+</p>
+              <p class="fs-60px bold dark-purple family-open-sans">2M+</p>
               <p class="fs-20px bold dark-purple">Active Users</p>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- post-task -->
+    <div class="container-wrapper">
+      <div class="post-task">
+        <p class="fs-40px black text-center family-muli-light weight-6">
+          Wanna post some tasks ?
+        </p>
+        <div class="fs-31px gray weight-7 text-center">
+          Post here your tasks to
+        </div>
+
+        <div class="post-task-btns">
+          <button class="fs-24px weight-6 active">Post a Task</button>
+          <button class="fs-24px weight-6">Find</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+      <div class="container-wrapper">
+        <div class="footer">
+          <div class="footer-box">
+            <img src="./assets/images/brand-logo.png" alt="" />
+            <p class="fs-14px white family-poppins weight-3">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor
+            </p>
+            <p class="fs-14px white family-poppins weight-3">
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris
+            </p>
+          </div>
+          <div class="footer-box footer-box-p-t footer-links">
+            <div>
+              <a href="#" class="footer-link weight-6 fs-18px white">Home</a>
+              <a href="#" class="footer-link weight-6 fs-18px white">About</a>
+              <a href="#" class="footer-link weight-6 fs-18px white"
+                >Contact Us</a
+              >
+              <a href="#" class="footer-link weight-6 fs-18px white">Careers</a>
+              <a href="#" class="footer-link weight-6 fs-18px white">(FAQs)</a>
+            </div>
+          </div>
+
+          <div class="footer-box footer-faqs footer-box-p-t">
+            <div class="footer-faq">
+              <div class="footer-faq-btn fs-18px white weight-6">
+                Some Faq Here
+                <div class="footer-faq-btn-icon">&#x2b;</div>
+              </div>
+            </div>
+            <div class="footer-faq">
+              <div class="footer-faq-btn fs-18px white weight-6">
+                Some Faq Here
+                <div class="footer-faq-btn-icon">&#x2b;</div>
+              </div>
+            </div>
+            <div class="footer-faq">
+              <div class="footer-faq-btn fs-18px white weight-6">
+                Some Faq Here
+                <div class="footer-faq-btn-icon">&#x2b;</div>
+              </div>
+            </div>
+            <div class="footer-faq">
+              <div class="footer-faq-btn fs-18px white weight-6">
+                Some Faq Here
+                <div class="footer-faq-btn-icon">&#x2b;</div>
+              </div>
+            </div>
+            <div class="footer-faq">
+              <div class="footer-faq-btn fs-18px white weight-6">
+                Some Faq Here
+                <div class="footer-faq-btn-icon">&#x2b;</div>
+              </div>
+            </div>
+            <div class="footer-faq">
+              <div class="footer-faq-btn fs-18px white weight-6">
+                Some Faq Here
+                <div class="footer-faq-btn-icon">&#x2b;</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-bottom-wrapper">
+      <div class="container-wrapper">
+        <div class="footer-bottom">
+          <p class="fs-14px white weight-4">
+            Copyright © 2021 Tast2Earn its affiliated companies. All rights
+            reserved.
+          </p>
+          <p class="fs-14px white weight-4">
+            Terms & Condition | Privacy Policy
+          </p>
         </div>
       </div>
     </div>
