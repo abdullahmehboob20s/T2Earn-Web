@@ -1416,20 +1416,6 @@ footer {
   margin: 1rem;
 }
 
-.customers-right .slick-slide {
-  /* width: 300px;
-  max-width: 532px; */
-}
-
-/* .customers-card-btns {
-  position: absolute;
-  top: 0;
-  right: 0;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-} */
-
 .customers-card-btn {
   width: 74px;
   height: 76px;
@@ -1752,12 +1738,6 @@ footer {
     height: auto !important;
     flex: unset;
   }
-
-  .swiper-wrapper {
-    /* height: auto; */
-  }
-
-  /* 1000px */
 }
 
 @media (max-width: 760px) {
