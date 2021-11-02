@@ -23,61 +23,127 @@
   <body>
     <div class="black-screen"></div>
     <!-- navbar -->
-    <div class="container-wrapper">
-      <nav class="navbar">
-        <a href="/" class="nav-img">
-          <img src="./assets/images/nav-img.png" alt="" />
-        </a>
+    <div class="navbar-wrapper">
+      <div class="container-wrapper">
+        <nav class="navbar">
+          <a href="/" class="nav-img">
+            <img src="./assets/images/nav-img.png" alt="" />
+          </a>
 
-        <img src="./assets/images/hamburger.png" class="hamburger" alt="" />
+          <img src="./assets/images/hamburger.png" class="hamburger" alt="" />
 
-        <div class="navbar-items">
-          <img
-            src="./assets/images/cross.png"
-            class="navbar-cross-icon"
-            alt=""
-          />
-          <div class="navbar-links">
-            <a class="black fs-16px bold" href="#">Home</a>
-            <a class="black fs-16px bold" href="#">Services</a>
-            <a class="black fs-16px bold" href="#">About</a>
-            <a class="black fs-16px bold" href="#">Login</a>
-            <a class="white fs-16px rounded-btn bg-purple" href="#">Sign Up</a>
+          <div class="navbar-items">
+            <img
+              src="./assets/images/cross.png"
+              class="navbar-cross-icon"
+              alt=""
+            />
+            <div class="navbar-links">
+              <a class="black fs-16px bold" href="#">Home</a>
+              <a class="black fs-16px bold" href="#">Services</a>
+              <a class="black fs-16px bold" href="#">About</a>
+              <a class="black fs-16px bold" href="#">Login</a>
+              <a class="white fs-16px rounded-btn bg-purple" href="#"
+                >Sign Up</a
+              >
+            </div>
+
+            <div class="navbar-dropdowns">
+              <div class="navbar-dropdown">
+                <p class="black fs-16px family-muli-semibold">
+                  Playstore (Bulk Review)
+                </p>
+                <img src="./assets/images/down-arrow-icon.png" alt="" />
+              </div>
+              <div class="navbar-dropdown">
+                <p class="black fs-16px family-muli-semibold">
+                  Facebook (Bulk Comment)
+                </p>
+                <img src="./assets/images/down-arrow-icon.png" alt="" />
+              </div>
+              <div class="navbar-dropdown">
+                <p class="black fs-16px family-muli-semibold">
+                  IMDB (Bulk Review)
+                </p>
+                <img src="./assets/images/down-arrow-icon.png" alt="" />
+              </div>
+              <div class="navbar-dropdown">
+                <p class="black fs-16px family-muli-semibold">See All</p>
+                <img src="./assets/images/down-arrow-icon.png" alt="" />
+              </div>
+            </div>
           </div>
-
-          <div class="navbar-dropdowns">
-            <div class="navbar-dropdown">
-              <p class="black fs-16px family-muli-semibold">
-                Playstore (Bulk Review)
-              </p>
-              <img src="./assets/images/down-arrow-icon.png" alt="" />
-            </div>
-            <div class="navbar-dropdown">
-              <p class="black fs-16px family-muli-semibold">
-                Facebook (Bulk Comment)
-              </p>
-              <img src="./assets/images/down-arrow-icon.png" alt="" />
-            </div>
-            <div class="navbar-dropdown">
-              <p class="black fs-16px family-muli-semibold">
-                IMDB (Bulk Review)
-              </p>
-              <img src="./assets/images/down-arrow-icon.png" alt="" />
-            </div>
-            <div class="navbar-dropdown">
-              <p class="black fs-16px family-muli-semibold">See All</p>
-              <img src="./assets/images/down-arrow-icon.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
 
     <!-- hero -->
     <section class="hero">
       <div class="hero-center-content">
         <div class="hero-center-content-wrapper">
+          <div class="responsive-titles">
+            <p class="responsive-title">Post Your First Task Here</p>
+            <p class="responsive-subtitle">
+              Create your Task of your own & let Everyone do it for you.
+            </p>
+          </div>
+
           <div class="hero-form">
+            <!-- in responsive -->
+            <div class="hero-in-responsive">
+              <div class="hero-dropdown-wrapper">
+                <p class="hero-dropdown-title family-open-sans">Plateform</p>
+                <div class="hero-dropdown">
+                  <div class="hero-dropdown-btn">
+                    Choose Plateform <span class="hero-dropdown-arrow">></span>
+                  </div>
+                </div>
+              </div>
+              <div class="hero-dropdown-wrapper">
+                <p class="hero-dropdown-title,family-open-sans">Description</p>
+                <textarea
+                  class="hero-textarea"
+                  placeholder="Tell Us more about your task..
+eg. rules etc.."
+                ></textarea>
+              </div>
+
+              <div class="hero-responsive-pay">
+                <div class="hero-responsive-pay-left">
+                  <p class="hero-dropdown-title family-open-sans fs-16px">
+                    End Date
+                  </p>
+                  <div class="hero-dropdown-dates">
+                    <div class="hero-dropdown-wrapper">
+                      <div class="hero-dropdown">
+                        <div class="hero-dropdown-btn fs-13px">
+                          Date <span class="hero-dropdown-arrow">></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="hero-dropdown-wrapper">
+                      <div class="hero-dropdown">
+                        <div class="hero-dropdown-btn fs-13px">
+                          Month <span class="hero-dropdown-arrow">></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="hero-responsive-pay-right">
+                  <p class="hero-dropdown-title family-open-sans">
+                    Pay per Task
+                  </p>
+                  <input
+                    class="hero-pay-input"
+                    type="text"
+                    placeholder="Enter Amount"
+                  />
+                </div>
+              </div>
+            </div>
+            <!--  -->
+
             <div class="hero-form-first-inputs">
               <div class="hero-forms-input">
                 <label
@@ -149,13 +215,15 @@
           </div>
 
           <div class="hero-text-content">
-            <p class="white fs-40px family-muli-bold">Earn whenever you want</p>
-            <p class="fs-24px white family-muli-bold">
+            <p class="white fs-40px family-muli-bold responsive-form-title">
+              Earn whenever you want
+            </p>
+            <p class="fs-24px white family-muli-bold responsive-form-subtitle">
               The more you complete tasks,<br />
               the more you will earn
             </p>
 
-            <button class="hero-text-btn fs-24px weight-5">Learn More</button>
+            <button class="hero-text-btn fs-20px weight-5">Learn More</button>
           </div>
         </div>
       </div>
@@ -482,7 +550,7 @@
             </div>
           </div>
         </div>
-        <div class="live-task-button fs-31px family-muli-bold">View All</div>
+        <div class="live-task-button fs-24px family-muli-bold">View All</div>
       </div>
     </div>
 
@@ -575,7 +643,7 @@
               Save 61% on average when you Post your first task.
             </p>
 
-            <div class="more-details-btn fs-31px bold family-muli-bold">
+            <div class="more-details-btn fs-28px bold family-muli-bold">
               Get More Details
             </div>
           </div>
@@ -608,7 +676,7 @@
             alt=""
           />
 
-          <button class="to-help-btn fs-31px white bold">Get a Quote</button>
+          <button class="to-help-btn fs-24px white bold">Get a Quote</button>
         </div>
         <div class="to-help-right">
           <div class="to-help-accordion">
