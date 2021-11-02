@@ -2054,4 +2054,13 @@ footer {
   .hero-dropdown-arrow {
     transform: rotate(90deg);
   }
+
+  .our-services {
+    margin-bottom: 0px;
+  }
+
+  .post-task {
+    margin-top: 40px;
+    margin-bottom: 3rem;
+  }
 }
