@@ -2063,4 +2063,16 @@ footer {
     margin-top: 40px;
     margin-bottom: 3rem;
   }
+
+  .more-details-wrapper {
+    margin-bottom: 40px;
+  }
+
+  .our-services-cards {
+    height: 350px;
+  }
+
+  .our-services-title {
+    margin-bottom: 2rem;
+  }
 }
