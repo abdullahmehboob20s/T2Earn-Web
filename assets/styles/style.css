@@ -2007,6 +2007,19 @@ footer {
     gap: 0.4rem;
   }
 
+  .hero-dropdown-btn.select {
+    border: none;
+    width: 100%;
+    outline: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url(../images/down-arrow-hero.png);
+    background-repeat: no-repeat;
+    background-position-x: 96%;
+    background-position-y: 19px;
+  }
+
   .hero-pay-input {
     padding: 15px 12px;
     border: none;
